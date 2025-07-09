@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1752086653" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sevenseg.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1752088324" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sevenseg.dcp">
   <File Type="PA-TCL" Name="sevenseg.tcl"/>
   <File Type="REPORTS-TCL" Name="sevenseg_reports.tcl"/>
   <File Type="RDS-RDS" Name="sevenseg.vds"/>
