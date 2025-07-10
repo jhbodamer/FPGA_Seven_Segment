@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1752088324" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sevenseg.dcp">
+<GenRun Id="synth_1" LaunchPart="xc7z007sclg400-1" LaunchTime="1752180044" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/sevenseg.dcp">
   <File Type="PA-TCL" Name="sevenseg.tcl"/>
   <File Type="REPORTS-TCL" Name="sevenseg_reports.tcl"/>
   <File Type="RDS-RDS" Name="sevenseg.vds"/>
@@ -11,8 +11,15 @@
   <File Type="VDS-TIMING-PB" Name="sevenseg_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PSRCDIR/sources_1/new/sevenseg.vhd">
+    <File Path="$PSRCDIR/sources_1/new/sevenseg_counter.vhd">
       <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/sevenseg_John.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>

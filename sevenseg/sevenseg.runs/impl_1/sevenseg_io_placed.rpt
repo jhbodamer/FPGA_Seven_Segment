@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2025 Advanced Micro Devices, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version              : Vivado v.2025.1 (win64) Build 6140274 Thu May 22 00:12:29 MDT 2025
-| Date                      : Wed Jul  9 15:13:06 2025
+| Date                      : Thu Jul 10 16:41:48 2025
 | Host                      : Johns_XPS_13 running 64-bit major release  (build 9200)
 | Command                   : report_io -file sevenseg_io_placed.rpt
 | Design                    : sevenseg
@@ -25,7 +25,7 @@ Table of Contents
 +---------------+
 | Total User IO |
 +---------------+
-|            13 |
+|            15 |
 +---------------+
 
 
@@ -113,8 +113,8 @@ Table of Contents
 | D16        |             |            | PS_MIO46_501            | PSS IO        |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | D17        |             |            | GND                     | GND           |             |         |            |      |                     |                      |     0.0 |            |           |          |      |                  |              |                   |              |
 | D18        |             | High Range | IO_L3N_T0_DQS_AD1N_35   | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| D19        |             | High Range | IO_L4P_T0_35            | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
-| D20        |             | High Range | IO_L4N_T0_35            | User IO       |             |      35 |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
+| D19        | btn1        | High Range | IO_L4P_T0_35            | INPUT         | LVCMOS33    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
+| D20        | btn0        | High Range | IO_L4N_T0_35            | INPUT         | LVCMOS33    |      35 |            |      |                     |                 NONE |         | FIXED      |           |          |      | NONE             |              |                   |              |
 | E1         |             |            | PS_DDR_DQ7_502          | PSS IO        |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | E2         |             |            | PS_DDR_DQ8_502          | PSS IO        |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |
 | E3         |             |            | PS_DDR_DQ9_502          | PSS IO        |             |         |            |      |                     |                      |         |            |           |          |      |                  |              |                   |              |

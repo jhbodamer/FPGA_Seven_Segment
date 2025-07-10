@@ -73,7 +73,7 @@ set_property ip_output_repo c:/VHDL/FPGA_Seven_Segment/sevenseg/sevenseg.cache/i
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_vhdl -library xil_defaultlib C:/VHDL/FPGA_Seven_Segment/sevenseg/sevenseg.srcs/sources_1/new/sevenseg.vhd
+read_vhdl -library xil_defaultlib C:/VHDL/FPGA_Seven_Segment/sevenseg/sevenseg.srcs/sources_1/new/sevenseg_counter.vhd
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

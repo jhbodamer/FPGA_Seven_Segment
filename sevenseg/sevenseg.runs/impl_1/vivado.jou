@@ -3,8 +3,8 @@
 # SW Build 6140274 on Thu May 22 00:12:29 MDT 2025
 # IP Build 6138677 on Thu May 22 03:10:11 MDT 2025
 # SharedData Build 6139179 on Tue May 20 17:58:58 MDT 2025
-# Start of session at: Wed Jul  9 15:12:43 2025
-# Process ID         : 14340
+# Start of session at: Thu Jul 10 16:41:25 2025
+# Process ID         : 25188
 # Current directory  : C:/VHDL/FPGA_Seven_Segment/sevenseg/sevenseg.runs/impl_1
 # Command line       : vivado.exe -log sevenseg.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source sevenseg.tcl -notrace
 # Log file           : C:/VHDL/FPGA_Seven_Segment/sevenseg/sevenseg.runs/impl_1/sevenseg.vdi
@@ -19,6 +19,6 @@
 # Host memory        : 16764 MB
 # Swap memory        : 5905 MB
 # Total Virtual      : 22670 MB
-# Available Virtual  : 9154 MB
+# Available Virtual  : 8104 MB
 #-----------------------------------------------------------
 source sevenseg.tcl -notrace

@@ -21,6 +21,7 @@
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.NUMERIC_STD.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -47,31 +48,35 @@ architecture Behavioral of sevenseg is
                 first, second, third, fourth
                 );
     signal current_digit : digit_labels;
-
+    signal reduce_clk : unsigned(19 downto 0);
 begin
             -- Finite State Machine Process
             Main_Process: process (clk)
                 begin   
                     if (rising_edge(clk)) then
-                        case (current_digit) is
-                            when first => 
-                                led <= "01010100"; --letter  n
-                                digit <= "1110"; -- right most digit
-                                current_digit <= second;
-                            when second => 
-                                led <= "01110100"; -- letter h
-                                digit <= "1101";
-                                current_digit <= third;
-                            when third => 
-                                led <= "01011100"; -- letter o
-                                digit <= "1011";
-                                current_digit <= fourth;
-                            when fourth => 
-                                led <= "00011111"; -- letter J
-                                digit <= "0111";
-                                current_digit <= first;
-                            when others => current_digit <= first;
-                        end case;
+                        reduce_clk <= reduce_clk +1;
+                        if reduce_clk = 1000000 then 
+                            case (current_digit) is
+                                when first => 
+                                    led <= "01010100"; --letter  n
+                                    digit <= "1110"; -- right most digit
+                                    current_digit <= second;
+                                when second => 
+                                    led <= "01110100"; -- letter h
+                                    digit <= "1101";
+                                    current_digit <= third;
+                                when third => 
+                                    led <= "01011100"; -- letter o
+                                    digit <= "1011";
+                                    current_digit <= fourth;
+                                when fourth => 
+                                    led <= "00011111"; -- letter J
+                                    digit <= "0111";
+                                    current_digit <= first;
+                                when others => current_digit <= first;
+                            end case;
+                            reduce_clk <= (others => '0');
+                         end if;
                     end if;
                end process;
 
