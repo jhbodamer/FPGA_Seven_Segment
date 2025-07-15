@@ -1,5 +1,5 @@
-*None of the text or code in this project was written by AI
-I used __VHDL By Example_  by Blain Readler as a reference
+*None of the text or code in this project was written by AI.
+For this project, I used __VHDL By Example_  by Blain Readler as a reference
 This was a simple project I did as an introduction to VHDL. I wrote two VHDL files with the accompanying constraints file. 
 The first spells out my name "John" on the display as shown below.
 
